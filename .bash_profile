@@ -18,3 +18,6 @@ fi
 
 # RVM
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
+
+# Aliases
+if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
