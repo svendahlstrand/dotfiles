@@ -8,3 +8,4 @@
 	status = true
 [core]
 	autocrlf = input
+	editor = mate -w
