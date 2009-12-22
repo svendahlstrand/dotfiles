@@ -1,7 +1,3 @@
-# Set paths for MacPorts
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/share/man:$MANPATH
-
 # I want pretty colors...
 export CLICOLOR=1
 
