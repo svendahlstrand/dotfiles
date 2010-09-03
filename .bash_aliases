@@ -17,14 +17,6 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias gg='git log'
-alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
  
 # rails
-alias sc='script/console'
-alias ss='unicorn_rails'
-alias sg='script/generate'
-alias a='autotest -q'
-alias tlog='tail -f log/development.log'
-alias scaffold='script/generate nifty_scaffold --haml --shoulda'
-alias migrate='rake db:migrate db:test:clone'
-alias rst='touch tmp/restart.txt'
+alias r='rails'
