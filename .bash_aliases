@@ -20,3 +20,4 @@ alias gg='git log'
  
 # rails
 alias r='rails'
+alias watch='watchr ~/.watchr/rails.rb'
