@@ -6,3 +6,15 @@
 [core]
   autocrlf = input
   editor = mate -w
+[alias]
+c = commit -m
+ca = commit --amend
+a = add .
+aa= !git add -A && git status
+l = pull --rebase
+p = push
+s = status
+d = diff
+dc = diff --cached
+g = log
+undo = reset --soft HEAD^
