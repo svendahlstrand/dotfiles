@@ -9,7 +9,9 @@
 [alias]
 c = commit -m
 ca = commit --amend
-a = add .
+a = add
+ac = !git add . && git commit -m
+co = checkout
 aa= !git add -A && git status
 l = pull --rebase
 p = push
@@ -18,3 +20,4 @@ d = diff
 dc = diff --cached
 g = log
 undo = reset --soft HEAD^
+w = show
