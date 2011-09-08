@@ -10,5 +10,6 @@ if [ -s /usr/local/etc/bash_completion.d/ ] ; then source /usr/local/etc/bash_co
 # Aliases
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
