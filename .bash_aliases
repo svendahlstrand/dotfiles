@@ -1,14 +1,10 @@
-# cd
 alias ..='cd ..'
- 
-# ls
-alias ls='ls -F'
-alias l='ls -lAh'
-alias ll='ls -l'
-alias la='ls -A'
- 
-# git
+alias b='bundle'
+alias be='bundle execute'
 alias g='git'
- 
-# rails
+alias gi='gem install'
+alias l='ls'
+alias ll='ls -alh'
+alias mkdir='mkdir -p'
 alias r='rails'
+alias tlf='tail -f'
