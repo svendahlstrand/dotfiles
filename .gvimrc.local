@@ -1,2 +1,6 @@
+" Theme and font settings
 color solarized
 set guifont=Menlo:h13
+
+" Remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
