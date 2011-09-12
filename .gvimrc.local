@@ -4,3 +4,8 @@ set guifont=Monaco:h13
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Don't use visual bells
+set noerrorbells
+set novisualbell
+
