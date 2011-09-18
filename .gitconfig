@@ -5,7 +5,7 @@
   ui = true
 [core]
   autocrlf = input
-  editor = mvim
+  editor = mvim -f
 [alias]
   c = commit -m
   ca = commit --amend
