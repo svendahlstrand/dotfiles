@@ -9,3 +9,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 set noerrorbells
 set novisualbell
 
+" Don't show intro message
+set shortmess+=I

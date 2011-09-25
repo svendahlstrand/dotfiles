@@ -1,2 +1,5 @@
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Don't show intro message
+set shortmess+=I
