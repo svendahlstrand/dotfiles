@@ -11,3 +11,9 @@ set novisualbell
 
 " Don't show intro message
 set shortmess+=I
+
+" Always use Visual Mode
+set selectmode=
+
+" Arrow keys should not stop Visual mode
+set keymodel-=stopsel
