@@ -12,3 +12,6 @@ if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
 # rbenv
 eval "$(rbenv init -)"
+
+# Set LC_CTYPE to work around this problem: http://mod16.org/hurfdurf/?p=189
+export LC_CTYPE="en_US.UTF-8"
