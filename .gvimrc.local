@@ -2,12 +2,12 @@
 color solarized
 set guifont=Monaco:h13
 
-" Remove trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
-
 " Don't use visual bells
 set noerrorbells
 set novisualbell
+
+" Remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Don't show intro message
 set shortmess+=I
@@ -17,3 +17,10 @@ set selectmode=
 
 " Arrow keys should not stop Visual mode
 set keymodel-=stopsel
+
+" Word wrap without linebreaks
+set wrap
+set linebreak
+set nolist
+set textwidth=0
+set wrapmargin=0
