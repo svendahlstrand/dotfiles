@@ -1,6 +1,7 @@
-" Theme and font settings
-color solarized
+" Font and theme settings
 set guifont=Monaco:h13
+set background=dark
+colorscheme solarized
 
 " Don't use visual bells
 set noerrorbells
