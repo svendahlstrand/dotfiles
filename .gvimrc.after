@@ -3,6 +3,9 @@ set guifont=Monaco:h13
 set background=dark
 colorscheme solarized
 
+" Don't show MacVim's toolbar
+set guioptions-=T
+
 " Don't use visual bells
 set noerrorbells
 set novisualbell
