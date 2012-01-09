@@ -22,3 +22,5 @@
   undo = reset --soft HEAD^
   w = show
   b = branch
+[push]
+  default = upstream
