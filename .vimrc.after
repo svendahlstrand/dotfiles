@@ -16,3 +16,6 @@ set linebreak
 set nolist
 set textwidth=0
 set wrapmargin=0
+
+" *.vm files are velocity
+au! BufRead,BufNewFile *.vm setfiletype velocity
