@@ -35,4 +35,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init -)"
