@@ -10,6 +10,7 @@ ZSH_THEME="sven"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias sv="supervision"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
