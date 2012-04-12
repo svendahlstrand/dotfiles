@@ -36,5 +36,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+export SENCHA_SDK_TOOLS_2_0_0_BETA2="/Applications/SenchaSDKTools-2.0.0-beta2"
+PATH="/Applications/SenchaSDKTools-2.0.0-beta2:$PATH"
+
 PATH="$HOME/.bin:$PATH"
+
 eval "$(rbenv init -)"
