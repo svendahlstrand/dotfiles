@@ -42,3 +42,5 @@ PATH="/Applications/SenchaSDKTools-2.0.0-beta2:$PATH"
 PATH="$HOME/.bin:/usr/local/bin:$PATH"
 
 eval "$(rbenv init -)"
+
+unsetopt correct_all
