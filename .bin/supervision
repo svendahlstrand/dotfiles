@@ -62,8 +62,8 @@ undeploy() {
 
 install_sitevision() {
   case $1 in
-    "2.6.2" )
-      install_sitevision_version "2.6.2" "http://www.sitevision.se/webdav/files/Kundwebb/Installationsfiler/2.6/sitevision-2.6.2_06-703.zip"
+    "2.6.2_07" )
+      install_sitevision_version "2.6.2_07" "http://www.sitevision.se/webdav/files/Kundwebb/Installationsfiler/2.6/sitevision-2.6.2_07-705.zip"
       ;;
     *)
       usage
@@ -84,7 +84,7 @@ usage() {
   echo "   use           Set the SiteVision version"
   echo "   version       Show the current SiteVision version"
   echo "   versions      List all SiteVision versions known to supervision"
-  echo "   install       Install SiteVision, available version: 2.6.2"
+  echo "   install       Install SiteVision, available version: 2.6.2_07"
   echo "   console       Start the current SiteVision version in console mode"
   echo "   undeploy      Undeploy a SiteVision portlet"
 }
