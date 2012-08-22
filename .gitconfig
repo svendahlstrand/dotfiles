@@ -6,6 +6,7 @@
 [core]
   autocrlf = input
   editor = s -w
+  excludesfile = ~/.gitignore_global
 [alias]
   c = commit -m
   ca = commit --amend
