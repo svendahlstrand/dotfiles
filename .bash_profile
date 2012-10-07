@@ -4,6 +4,9 @@ export CLICOLOR=1
 # ...and command prompt
 export PS1="\n\[\033[1;34m\]\w\[\033[0m\]$ "
 
+# Add user bin folder to path
+export PATH=~/.bin:$PATH
+
 # Git completion
 if [ -s /usr/local/etc/bash_completion.d/ ] ; then source /usr/local/etc/bash_completion.d/git-completion.bash ; fi
 
