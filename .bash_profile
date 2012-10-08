@@ -1,8 +1,12 @@
 # Add user bin folder to path
 export PATH=~/.bin:$PATH
 
-# Git completion
-if [ -s /usr/local/etc/bash_completion.d/ ] ; then source /usr/local/etc/bash_completion.d/git-completion.bash ; fi
+# Git completion and prompt
+if [ -s /usr/local/etc/bash_completion.d/ ] ; then
+  source /usr/local/etc/bash_completion.d/git-completion.bash
+  source /usr/local/etc/bash_completion.d/git-prompt.sh
+  export GIT_PS1_SHOWDIRTYSTATE=1
+fi
 
 # I want pretty colors...
 export CLICOLOR=1
