@@ -4,7 +4,9 @@
 --type-set=sass=.sass,.scss
 --type-set=textile=.textile
 --type-set=markdown=.md,.markdown
+--type-set=json=.json
 
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=_site
+--ignore-dir=touch
