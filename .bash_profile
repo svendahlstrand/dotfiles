@@ -1,5 +1,5 @@
-# Add user bin and npm folder to path
-export PATH=~/.bin:/usr/local/share/npm/bin:$PATH
+# Add local, user and npm directories to path
+export PATH=/usr/local/bin:$HOME/.bin:/usr/local/share/npm/bin:$PATH
 
 # Git completion and prompt
 if [ -s /usr/local/etc/bash_completion.d/ ] ; then
