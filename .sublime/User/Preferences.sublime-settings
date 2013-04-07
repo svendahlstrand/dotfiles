@@ -1,0 +1,20 @@
+{
+	"color_scheme": "Packages/User/Monokai Dark.tmTheme",
+	"create_window_at_startup": false,
+	"font_face": "Monaco",
+	"font_size": 13.0,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+	],
+	"remember_open_files": false,
+	"rulers":
+	[
+		80
+	],
+	"soda_classic_tabs": true,
+	"tab_size": 2,
+	"theme": "Soda Light.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
