@@ -4,6 +4,7 @@
 	[
 		"CoffeeScript",
 		"flatland",
+		"Gist",
 		"Git",
 		"LESS",
 		"Package Control",
