@@ -1,3 +1,4 @@
+--ignore-case
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=_site
