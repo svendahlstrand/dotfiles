@@ -5,7 +5,6 @@
   ui = true
 [core]
   autocrlf = input
-  editor = subl -w
   excludesfile = ~/.gitignore_global
 [alias]
   c = commit -m
