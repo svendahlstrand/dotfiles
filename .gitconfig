@@ -7,12 +7,10 @@
   autocrlf = input
   excludesfile = ~/.gitignore_global
 [alias]
-  c = commit -m
+  c = commit
   ca = commit --amend
   a = add
-  ac = !git add . && git commit -m
   co = checkout
-  aa= !git add -A && git status
   l = pull --rebase
   p = push
   s = status
