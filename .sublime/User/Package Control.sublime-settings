@@ -3,7 +3,6 @@
 	"installed_packages":
 	[
 		"CoffeeScript",
-		"flatland",
 		"Gist",
 		"Git",
 		"LESS",
@@ -13,10 +12,7 @@
 		"SublimeLinter",
 		"SublimeREPL",
 		"Terminal",
+		"Theme - Flatland",
 		"Theme - Soda"
-	],
-	"repositories":
-	[
-		"https://github.com/thinkpixellab/flatland"
 	]
 }
