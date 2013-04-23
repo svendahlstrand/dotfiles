@@ -5,14 +5,15 @@
 		"CoffeeScript",
 		"Gist",
 		"Git",
+		"HTML Snippets",
 		"LESS",
 		"Package Control",
 		"ruby-slim.tmbundle",
 		"Sass",
+		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeREPL",
 		"Terminal",
-		"Theme - Flatland",
-		"Theme - Soda"
+		"Theme - Flatland"
 	]
 }
