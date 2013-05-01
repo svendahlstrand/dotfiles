@@ -2,5 +2,9 @@
     "jshint_options":
     {
         "multistr": true
+    },
+    "sublimelinter_syntax_map":
+    {
+        "JSON": "javascript"
     }
 }
