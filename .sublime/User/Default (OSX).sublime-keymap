@@ -1,2 +1,3 @@
 [
+  { "keys": ["§"], "command": "show_panel", "args": {"panel": "console", "toggle": true} }
 ]
