@@ -21,4 +21,4 @@
   w = show
   b = branch
 [push]
-  default = upstream
+  default = simple
