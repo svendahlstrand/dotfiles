@@ -1,19 +1,8 @@
 {
-	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"CoffeeScript",
-		"Gist",
-		"Git",
-		"HTML Snippets",
-		"LESS",
-		"Package Control",
-		"Ruby Slim",
-		"Sass",
 		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeREPL",
-		"Terminal",
 		"Theme - Flatland"
 	]
 }
