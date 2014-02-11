@@ -3,6 +3,7 @@
 	[
 		"SideBarEnhancements",
 		"SublimeLinter",
+		"SublimeLinter-jshint",
 		"Theme - Flatland"
 	]
 }
