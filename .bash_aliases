@@ -9,6 +9,7 @@ alias r='rails'
 alias tlf='tail -f'
 alias sv='supervision'
 alias s='subl'
+alias ws='webserver'
 
 # command to jump directly to code directories with `c my_project`
 c() { cd ~/code/$1; }
