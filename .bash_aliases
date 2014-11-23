@@ -10,6 +10,7 @@ alias tlf='tail -f'
 alias sv='supervision'
 alias s='subl'
 alias ws='webserver'
+alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
 
 # command to jump directly to code directories with `c my_project`
 c() { cd ~/code/$1; }
