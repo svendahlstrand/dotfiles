@@ -7,6 +7,14 @@
         "gutter_theme_excludes": [],
         "lint_mode": "background",
         "linters": {
+            "csslint": {
+                "@disable": false,
+                "args": [],
+                "errors": "",
+                "excludes": [],
+                "ignore": "",
+                "warnings": ""
+            },
             "jshint": {
                 "@disable": false,
                 "args": [],
@@ -15,6 +23,7 @@
         },
         "mark_style": "outline",
         "no_column_highlights_line": false,
+        "passive_warnings": false,
         "paths": {
             "linux": [],
             "osx": [],
