@@ -5,11 +5,11 @@
 	],
 	"installed_packages":
 	[
+		"Dracula Color Scheme",
 		"Package Control",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-csslint",
-		"SublimeLinter-jshint",
-		"Theme - Flatland"
+		"SublimeLinter-jshint"
 	]
 }
