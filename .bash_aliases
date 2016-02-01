@@ -1,6 +1,7 @@
 alias ..='cd ..'
 alias b='bundle'
 alias be='bundle exec'
+alias e='atom'
 alias g='git'
 alias l='ls'
 alias ll='ls -alh'
