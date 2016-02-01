@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-curl -s http://compat.tyda.se/search?w=$1 | grep -o '"tyda_transR[^<]*' | cut -d '>' -f 2 | sort -u
