@@ -18,7 +18,7 @@ export PS1="\n\[\033[1;34m\]\w\[\033[0m\]\$(__git_ps1)$ "
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
 # Set editor
-export EDITOR='subl -w'
+export EDITOR='atom -w'
 
 # rbenv
 eval "$(rbenv init -)"

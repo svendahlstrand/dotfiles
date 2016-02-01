@@ -8,7 +8,6 @@ alias mkdir='mkdir -p'
 alias r='rails'
 alias tlf='tail -f'
 alias sv='supervision'
-alias s='subl'
 alias ws='webserver'
 alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
 
