@@ -5,11 +5,8 @@ alias g='git'
 alias l='ls'
 alias ll='ls -alh'
 alias mkdir='mkdir -p'
-alias r='rails'
-alias tlf='tail -f'
 alias sv='supervision'
 alias ws='webserver'
-alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
 
 # command to jump directly to code directories with `c my_project`
 c() { cd ~/code/$1; }
