@@ -1,0 +1,24 @@
+"*":
+  core:
+    disabledPackages: [
+      "exception-reporting"
+    ]
+    themes: [
+      "dracula-ui"
+      "dracula-theme"
+    ]
+  editor:
+    invisibles: {}
+  "exception-reporting": {}
+  "linter-cppcheck": {}
+  "linter-cpplint":
+    extensions: "cpp,h,ino"
+    filters: "-legal"
+  "linter-gcc": {}
+  "linter-ruby": {}
+  "markdown-preview":
+    useGitHubStyle: true
+  "vim-mode-plus":
+    startInInsertMode: true
+  welcome:
+    showOnStartup: false
