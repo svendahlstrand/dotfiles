@@ -18,6 +18,9 @@
   "linter-ruby": {}
   "markdown-preview":
     useGitHubStyle: true
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "vim-mode-plus":
     startInInsertMode: true
   welcome:
