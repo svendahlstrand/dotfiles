@@ -7,6 +7,7 @@ alias l='ls'
 alias ll='ls -alh'
 alias mkdir='mkdir -p'
 alias sv='supervision'
+alias sudo='sudo '
 alias ws='python -m SimpleHTTPServer'
 
 # command to jump directly to code directories with `c my_project`
