@@ -16,6 +16,8 @@
     filters: "-legal"
   "linter-gcc": {}
   "linter-ruby": {}
+  "linter-shellcheck":
+    enableNotice: true
   "markdown-preview":
     useGitHubStyle: true
   "tree-view":
