@@ -1,0 +1,37 @@
+#!/usr/bin/env osascript -l JavaScript
+
+// Resize the applications to fit my screenasting video resolution.
+//
+// Usage:
+// $ cast "Google Chrome" Terminal
+
+function resizeWindows(apps, width, height) {
+  apps.forEach(function (appName) {
+    try {
+      var app = Application(appName);
+
+      if (!app.running()) { return; }
+
+      app.windows[0].bounds = {
+        x: 0,
+        y: 0,
+        width: width,
+        height: height
+      };
+
+      console.log('Resized ' + appName + '.');
+    } catch (e) {
+      console.log('I\'m having trouble with ' + appName + '. Sorry!');
+    }
+  });
+}
+
+function run(argv) {
+  var apps = ['Firefox', 'Safari', 'Google Chrome'];
+
+  if (argv.length > 0) {
+    apps = argv;
+  }
+
+  resizeWindows(apps, 1280, 720);
+}
