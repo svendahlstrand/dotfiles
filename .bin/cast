@@ -1,20 +1,52 @@
 #!/usr/bin/env osascript -l JavaScript
 
-// Resize the applications to fit my screenasting video resolution.
+// Resize applications to fit my screencasting video resolution.
 //
 // Usage:
 // $ cast "Google Chrome" Terminal
+// $ cast --revert
 
-function resizeWindows(apps, width, height) {
-  apps.forEach(function (appName) {
+var defaults = {
+  apps: ['Firefox', 'Safari', 'Google Chrome'],
+  width: 1280,
+  height: 720,
+  file: '~/.cast'
+};
+
+var file = (function () {
+  var app = Application.currentApplication();
+  app.includeStandardAdditions = true;
+
+  function writeJSON(filePath, obj) {
+    app.doShellScript('echo \'' + JSON.stringify(obj) + '\' > ' + filePath);
+  }
+
+  function readJSON(filePath) {
+    var str = 'null';
+
+    try {
+      str = ObjC.unwrap(app.doShellScript('cat ' + filePath));
+    } catch (e) {}
+
+    return JSON.parse(str);
+  }
+
+  return {
+    writeJSON: writeJSON,
+    readJSON: readJSON
+  };
+}());
+
+var caster = (function () {
+  function resizeWindow(appName, x, y, width, height) {
     try {
       var app = Application(appName);
 
       if (!app.running()) { return; }
 
       app.windows[0].bounds = {
-        x: 0,
-        y: 0,
+        x: x,
+        y: y,
         width: width,
         height: height
       };
@@ -23,15 +55,59 @@ function resizeWindows(apps, width, height) {
     } catch (e) {
       console.log('I\'m having trouble with ' + appName + '. Sorry!');
     }
-  });
-}
-
-function run(argv) {
-  var apps = ['Firefox', 'Safari', 'Google Chrome'];
-
-  if (argv.length > 0) {
-    apps = argv;
   }
 
-  resizeWindows(apps, 1280, 720);
+  function resizeWindows(appNames, x, y, width, height) {
+    appNames.forEach(function (appName) {
+      resizeWindow(appName, x, y, width, height);
+    });
+  }
+
+  function getApplicationsBounds(appNames) {
+    var bounds = [];
+
+    appNames.forEach(function (appName) {
+      try {
+        var app = Application(appName);
+
+        if (!app.running()) { return; }
+
+        bounds.push({
+          appName: appName,
+          bounds: app.windows[0].bounds()
+        });
+      } catch (e) {}
+    });
+
+    return bounds;
+  }
+
+  return {
+    resizeWindow: resizeWindow,
+    resizeWindows: resizeWindows,
+    getApplicationsBounds: getApplicationsBounds
+  };
+}());
+
+function run(argv) {
+  var apps;
+
+  if (argv.indexOf('--revert') >= 0) {
+    apps = file.readJSON(defaults.file);
+
+    if (!apps) { return; }
+
+    apps.forEach(function (app) {
+      caster.resizeWindow(app.appName, app.bounds.x, app.bounds.y, app.bounds.width, app.bounds.height);
+    });
+  } else {
+    apps = defaults.apps;
+
+    if (argv.length > 0) {
+      apps = argv;
+    }
+
+    file.writeJSON(defaults.file, caster.getApplicationsBounds(apps));
+    caster.resizeWindows(apps, 0, 0, defaults.width, defaults.height);
+  }
 }
