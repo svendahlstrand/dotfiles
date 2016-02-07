@@ -14,21 +14,18 @@ var defaults = {
 };
 
 var file = (function () {
-  var app = Application.currentApplication();
-  app.includeStandardAdditions = true;
+  function expandTilde(path) {
+    return $(path).stringByExpandingTildeInPath.js;
+  }
 
   function writeJSON(filePath, obj) {
-    app.doShellScript('echo \'' + JSON.stringify(obj) + '\' > ' + filePath);
+    $(JSON.stringify(obj)).writeToFileAtomically(expandTilde(filePath), true);
   }
 
   function readJSON(filePath) {
-    var str = 'null';
+    var str = $.NSString.stringWithContentsOfFile(expandTilde(filePath)).js;
 
-    try {
-      str = ObjC.unwrap(app.doShellScript('cat ' + filePath));
-    } catch (e) {}
-
-    return JSON.parse(str);
+    return JSON.parse(str || null);
   }
 
   return {
