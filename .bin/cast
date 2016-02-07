@@ -10,20 +10,37 @@ var defaults = {
   apps: ['Firefox', 'Safari', 'Google Chrome'],
   width: 1280,
   height: 720,
-  file: '~/.cast'
+  file: '.cast'
 };
 
 var file = (function () {
-  function expandTilde(path) {
-    return $(path).stringByExpandingTildeInPath.js;
+  var app = Application.currentApplication();
+  app.includeStandardAdditions = true;
+
+  function getUserDomainPath(filePath) {
+    return Path(filePath, { from: 'user domain' });
   }
 
   function writeJSON(filePath, obj) {
-    $(JSON.stringify(obj)).writeToFileAtomically(expandTilde(filePath), true);
+    var file = app.openForAccess(getUserDomainPath(filePath), { writePermission: true });
+
+    try {
+      app.setEof(file, { to: 0 });
+      app.write(JSON.stringify(obj), { to: file });
+    } catch (e) {}
+
+    app.closeAccess(file);
   }
 
   function readJSON(filePath) {
-    var str = $.NSString.stringWithContentsOfFile(expandTilde(filePath)).js;
+    var file = app.openForAccess(getUserDomainPath(filePath));
+    var str = null;
+
+    try {
+      str = app.read(file);
+    } catch (e) {}
+
+    app.closeAccess(file);
 
     return JSON.parse(str || null);
   }
