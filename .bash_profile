@@ -25,3 +25,9 @@ eval "$(rbenv init -)"
 
 # Set LC_CTYPE to work around this problem: http://mod16.org/hurfdurf/?p=189
 export LC_CTYPE="en_US.UTF-8"
+
+# Increase Bash history size. Allow 32³ entries; the default is 500.
+export HISTSIZE='32768';
+export HISTFILESIZE="${HISTSIZE}";
+# Omit duplicates and commands that begin with a space from history.
+export HISTCONTROL='ignoreboth';
