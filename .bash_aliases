@@ -7,6 +7,7 @@ alias .....='cd ../../../..'
 # Shortcuts are nice.
 alias b='bundle'
 alias be='bundle exec'
+alias d='cd ~/Desktop'
 alias e='atom'
 alias g='git'
 alias l='ls'
