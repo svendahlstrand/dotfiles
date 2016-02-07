@@ -1,4 +1,7 @@
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 alias b='bundle'
 alias be='bundle exec'
 alias e='atom'
