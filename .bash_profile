@@ -23,6 +23,9 @@ export EDITOR='atom -nw'
 # rbenv
 eval "$(rbenv init -)"
 
+# Disable homebrew calling home
+export HOMEBREW_NO_ANALYTICS=1
+
 # Set LC_CTYPE to work around this problem: http://mod16.org/hurfdurf/?p=189
 export LC_CTYPE="en_US.UTF-8"
 
