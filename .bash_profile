@@ -1,4 +1,4 @@
-# Add local, user and npm directories to path
+# Add user and npm bin directories to path
 export PATH=$HOME/.bin:/usr/local/share/npm/bin:$PATH
 
 # Git completion and prompt
@@ -28,7 +28,7 @@ if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 # Set editor
 export EDITOR='atom -nw'
 
-# rbenv
+# Initialize rbenv
 if hash rbenv 2>/dev/null ; then
   eval "$(rbenv init -)"
 fi
