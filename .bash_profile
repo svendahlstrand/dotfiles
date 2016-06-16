@@ -29,7 +29,9 @@ if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 export EDITOR='atom -nw'
 
 # rbenv
-eval "$(rbenv init -)"
+if hash rbenv 2>/dev/null ; then
+  eval "$(rbenv init -)"
+fi
 
 # Disable homebrew calling home
 export HOMEBREW_NO_ANALYTICS=1
