@@ -22,3 +22,11 @@
   b = branch
 [push]
   default = simple
+[diff]
+	compactionHeuristic = true
+[pager]
+	log = "/usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight" | less
+	show = "/usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight" | less
+	diff = "/usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight" | less
+[interactive]
+	diffFilter = "/usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight"
