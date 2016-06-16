@@ -11,8 +11,16 @@ fi
 # I want pretty colors...
 export CLICOLOR=1
 
-# ...and command prompt
-export PS1="\n\[\033[1;34m\]\w\[\033[0m\]\$(__git_ps1)$ "
+# ...and command prompt...
+ps1="\n\[\033[1;34m\]\w\[\033[0m\]"
+
+# ...maybe with git support...
+if [ -n "${GIT_PS1_SHOWDIRTYSTATE+x}" ] ; then
+  ps1="\n\[\033[1;34m\]\w\[\033[0m\]\$(__git_ps1)"
+fi
+
+# ...definitely with $
+export PS1="${ps1}$ "
 
 # Aliases
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
