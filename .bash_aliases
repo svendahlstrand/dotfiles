@@ -31,6 +31,10 @@ alias week='date +%V'
 # Start a simple web server.
 alias ws='python -m SimpleHTTPServer'
 
+# US DNS
+alias jump-to-us='sudo networksetup -setdnsservers Wi-Fi empty && sudo networksetup -setdnsservers Wi-Fi 185.37.37.37 185.37.37.185'
+alias jump-home='sudo networksetup -setdnsservers Wi-Fi empty'
+
 # Change directory to code projects with autocompletion.
 #
 # Usage:
