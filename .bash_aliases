@@ -23,7 +23,7 @@ alias sudo='sudo '
 alias ip='echo -n "Private IP address: " && ipconfig getifaddr en0 && echo -n "Public IP address: " && dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Update homebrew and OS X.
-alias update='brew update && brew upgrade --all && brew cleanup && softwareupdate -ia'
+alias update='brew update && brew upgrade && brew cleanup && softwareupdate -ia'
 
 # Show current week number.
 alias week='date +%V'
