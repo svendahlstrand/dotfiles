@@ -3,6 +3,7 @@
     disabledPackages: [
       "exception-reporting"
     ]
+    telemetryConsent: "no"
     themes: [
       "dracula-ui"
       "dracula-theme"
