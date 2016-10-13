@@ -10,6 +10,7 @@
     ]
   editor:
     invisibles: {}
+    showInvisibles: true
   "exception-reporting": {}
   "linter-cppcheck": {}
   "linter-cpplint":
