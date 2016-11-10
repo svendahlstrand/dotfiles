@@ -35,6 +35,13 @@ alias ws='python -m SimpleHTTPServer'
 alias jump-to-us='sudo networksetup -setdnsservers Wi-Fi empty && sudo networksetup -setdnsservers Wi-Fi 185.37.37.37 185.37.37.185'
 alias jump-home='sudo networksetup -setdnsservers Wi-Fi empty'
 
+# Add "bundle exec" like behavior for npm
+function npm-exec {
+  $(npm bin)/$@
+}
+
+alias ne='npm-exec'
+
 # Change directory to code projects with autocompletion.
 #
 # Usage:
