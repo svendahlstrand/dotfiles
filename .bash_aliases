@@ -37,7 +37,7 @@ alias jump-home='sudo networksetup -setdnsservers Wi-Fi empty'
 
 # Add "bundle exec" like behavior for npm
 function npm-exec {
-  $(npm bin)/$@
+  "$(npm bin)"/$@
 }
 
 alias ne='npm-exec'
