@@ -1,7 +1,7 @@
 brew "ack"
 brew "git"
 brew "rbenv"
-brew "avrdude"
 
-tap "osx-cross/avr"
-brew "avr-libc"
+tap "svendahlstrand/stuff"
+brew "supervision"
+brew "cast"
