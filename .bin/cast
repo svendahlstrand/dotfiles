@@ -17,12 +17,12 @@ var file = (function () {
   var app = Application.currentApplication();
   app.includeStandardAdditions = true;
 
-  function getUserDomainPath(filePath) {
-    return Path(filePath, { from: 'user domain' });
+  function getFilePath(fileName) {
+    return Path(app.pathTo('home folder') + '/' + fileName);
   }
 
-  function writeJSON(filePath, obj) {
-    var file = app.openForAccess(getUserDomainPath(filePath), { writePermission: true });
+  function writeJSON(fileName, obj) {
+    var file = app.openForAccess(getFilePath(fileName), { writePermission: true });
 
     try {
       app.setEof(file, { to: 0 });
@@ -32,8 +32,8 @@ var file = (function () {
     app.closeAccess(file);
   }
 
-  function readJSON(filePath) {
-    var file = app.openForAccess(getUserDomainPath(filePath));
+  function readJSON(fileName) {
+    var file = app.openForAccess(getFilePath(fileName));
     var str = null;
 
     try {
