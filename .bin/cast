@@ -10,19 +10,19 @@ var defaults = {
   apps: ['Firefox', 'Safari', 'Google Chrome'],
   width: 1280,
   height: 720,
-  file: '.cast'
+  fileName: '.cast'
 };
 
-var file = (function () {
+var fs = (function () {
   var app = Application.currentApplication();
   app.includeStandardAdditions = true;
 
-  function getFilePath(fileName) {
-    return Path(app.pathTo('home folder') + '/' + fileName);
+  function getPathInHomeDirectory(path) {
+    return Path([app.pathTo('home folder'), path].join('/'));
   }
 
-  function writeJSON(fileName, obj) {
-    var file = app.openForAccess(getFilePath(fileName), { writePermission: true });
+  function writeJSON(path, obj) {
+    var file = app.openForAccess(path, { writePermission: true });
 
     try {
       app.setEof(file, { to: 0 });
@@ -32,8 +32,8 @@ var file = (function () {
     app.closeAccess(file);
   }
 
-  function readJSON(fileName) {
-    var file = app.openForAccess(getFilePath(fileName));
+  function readJSON(path) {
+    var file = app.openForAccess(path);
     var str = null;
 
     try {
@@ -46,6 +46,7 @@ var file = (function () {
   }
 
   return {
+    getPathInHomeDirectory: getPathInHomeDirectory,
     writeJSON: writeJSON,
     readJSON: readJSON
   };
@@ -105,9 +106,10 @@ var caster = (function () {
 
 function run(argv) {
   var apps;
+  var filePath = fs.getPathInHomeDirectory(defaults.fileName);
 
   if (argv.indexOf('--revert') >= 0) {
-    apps = file.readJSON(defaults.file);
+    apps = fs.readJSON(filePath);
 
     if (!apps) { return; }
 
@@ -121,7 +123,7 @@ function run(argv) {
       apps = argv;
     }
 
-    file.writeJSON(defaults.file, caster.getApplicationsBounds(apps));
+    fs.writeJSON(filePath, caster.getApplicationsBounds(apps));
     caster.resizeWindows(apps, 0, 0, defaults.width, defaults.height);
   }
 }
