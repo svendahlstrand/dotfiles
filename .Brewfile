@@ -1,7 +1,10 @@
 brew "ack"
 brew "git"
+brew "heroku"
+brew "node"
 brew "rbenv"
+brew "shellcheck"
 
-tap "svendahlstrand/stuff"
-brew "supervision"
+tap "svendahlstrand/tap"
 brew "cast"
+brew "supervision"
