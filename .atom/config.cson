@@ -22,6 +22,11 @@
     enableNotice: true
   "markdown-preview":
     useGitHubStyle: true
+  "spell-check":
+    locales: [
+      "sv-SE"
+      "en-US"
+    ]
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
