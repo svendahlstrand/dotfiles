@@ -2,7 +2,11 @@
   core:
     disabledPackages: [
       "exception-reporting"
+      "bookmarks"
+      "metrics"
+      "styleguide"
     ]
+    restorePreviousWindowsOnStart: false
     telemetryConsent: "no"
     themes: [
       "dracula-ui"
