@@ -32,7 +32,7 @@ alias week='date +%V'
 alias ws='python -m SimpleHTTPServer'
 
 # US DNS
-alias jump-to-us='sudo networksetup -setdnsservers Wi-Fi empty && sudo networksetup -setdnsservers Wi-Fi 185.37.37.37 185.37.37.185'
+alias jump-to-us='sudo networksetup -setdnsservers Wi-Fi empty && sudo networksetup -setdnsservers Wi-Fi 185.37.37.37 185.37.39.39'
 alias jump-home='sudo networksetup -setdnsservers Wi-Fi empty'
 
 # Add "bundle exec" like behavior for npm
