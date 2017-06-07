@@ -10,7 +10,7 @@
     telemetryConsent: "no"
     themes: [
       "dracula-ui"
-      "dracula-theme"
+      "dracula-syntax"
     ]
   editor:
     invisibles: {}
