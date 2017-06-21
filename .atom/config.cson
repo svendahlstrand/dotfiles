@@ -6,7 +6,7 @@
       "metrics"
       "styleguide"
     ]
-    restorePreviousWindowsOnStart: false
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
       "dracula-ui"
