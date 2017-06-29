@@ -3,3 +3,6 @@
 --ignore-dir=tmp
 --ignore-dir=_site
 --ignore-dir=touch
+--ignore-dir=.idea
+--ignore-dir=build
+--ignore-dir=target
