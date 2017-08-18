@@ -4,6 +4,7 @@ brew "heroku"
 brew "node"
 brew "rbenv"
 brew "shellcheck"
+brew "visionmedia-watch"
 
 tap "svendahlstrand/tap"
 brew "cast"
