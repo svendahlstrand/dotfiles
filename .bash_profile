@@ -8,6 +8,10 @@ if [ -s /usr/local/etc/bash_completion.d/ ] ; then
   export GIT_PS1_SHOWDIRTYSTATE=1
 fi
 
+# Bash completion
+
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 # I want pretty colors...
 export CLICOLOR=1
 
