@@ -1,6 +1,5 @@
 # dotfiles
 
-
 > ~ is where the ❤️ is
 
 ## Installation
@@ -19,4 +18,7 @@ git checkout -t origin/master
 
 # Hide this file in Finder.app.
 chflags hidden README.md
+
+# Install common stuff using Homebrew.
+brew bundle --global
 ```
