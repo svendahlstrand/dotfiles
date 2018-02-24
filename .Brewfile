@@ -9,4 +9,5 @@ brew "visionmedia-watch"
 
 tap "svendahlstrand/tap"
 brew "cast"
+brew "data64"
 brew "supervision"
