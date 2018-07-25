@@ -32,7 +32,7 @@ alias week='date +%V'
 alias ws='ruby -run -ehttpd . -p8000'
 
 # US DNS
-alias jump-to-us='sudo networksetup -setdnsservers Wi-Fi empty && sudo networksetup -setdnsservers Wi-Fi 185.37.37.37 185.37.39.39'
+alias jump-to-us='sudo networksetup -setdnsservers Wi-Fi empty && sudo networksetup -setdnsservers Wi-Fi 185.37.37.37 185.37.39.39 && security find-generic-password -s unlocator -w | xargs curl -L'
 alias jump-home='sudo networksetup -setdnsservers Wi-Fi empty && sudo networksetup -setdnsservers Wi-Fi 1.1.1.1 1.0.0.1'
 
 # HTTPS alias for HTTPie
