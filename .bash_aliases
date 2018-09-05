@@ -20,7 +20,7 @@ alias ll='ls -alh'
 alias sudo='sudo '
 
 # Show private and public IP address.
-alias ip='echo -n "Private IP address: " && ipconfig getifaddr en0 && echo -n "Public IP address: " && dig +short myip.opendns.com @resolver1.opendns.com'
+alias ip='echo -n "Private IP address: " && ipconfig getifaddr en0 && echo -n "Public IP address: " && curl https://am.i.mullvad.net/ip'
 
 # Update homebrew and macOS.
 alias update='brew update && brew upgrade && brew cleanup && softwareupdate -ia'
