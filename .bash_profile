@@ -40,7 +40,9 @@ fi
 # Disable homebrew calling home
 export HOMEBREW_NO_ANALYTICS=1
 
-# Set LC_CTYPE to work around this problem: http://mod16.org/hurfdurf/?p=189
+# Set LANG, LC_ALL and LC_CTYPE to work around this problem: http://mod16.org/hurfdurf/?p=189
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 
 # Increase Bash history size. Allow 32³ entries; the default is 500.
