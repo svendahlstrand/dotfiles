@@ -40,7 +40,9 @@ fi
 # Disable homebrew calling home
 export HOMEBREW_NO_ANALYTICS=1
 
-# Set LANG, LC_ALL and LC_CTYPE to work around this problem: http://mod16.org/hurfdurf/?p=189
+# Set LANG, LC_ALL and LC_CTYPE to work around a couple of problems:
+# * http://mod16.org/hurfdurf/?p=189
+# * https://stackoverflow.com/questions/11540815/how-to-change-the-language-of-my-git
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
