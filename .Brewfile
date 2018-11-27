@@ -1,7 +1,6 @@
 brew "ack"
 brew "bash-completion"
 brew "git"
-brew "heroku"
 brew "node"
 brew "rbenv"
 brew "shellcheck"
