@@ -29,7 +29,7 @@ alias update='brew update && brew upgrade && brew cleanup && softwareupdate -ia'
 alias week='date +%V'
 
 # Start a simple web server.
-alias ws='ruby -run -ehttpd . -p8000'
+alias ws='ruby -run -e httpd . -p 80'
 
 # US DNS
 alias jump-to-us='sudo networksetup -setdnsservers Wi-Fi empty && sudo networksetup -setdnsservers Wi-Fi 185.37.37.37 185.37.39.39 && security find-generic-password -s unlocator -w | xargs curl -L'
