@@ -30,7 +30,7 @@ export PS1="${ps1}$ "
 if [ -s ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
 
 # Set editor
-export EDITOR='subl -w'
+export EDITOR='nova -w'
 
 # Initialize rbenv
 if hash rbenv 2>/dev/null ; then
